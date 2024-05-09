@@ -32,5 +32,4 @@ const errorMiddleware = (err, req, res, next) => {
       message: err.message,
     });
   };
-  
-    module.exports = { Errorhandler, errorMiddleware };
+module.exports = { Errorhandler, errorMiddleware };

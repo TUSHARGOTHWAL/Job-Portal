@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 
@@ -62,3 +62,5 @@ userSchema.methods.getJwtToken = function(){
         expiresIn: process.env.JWT_EXPIRES_TIME
     });
 }
+
+module.exports = mongoose.model('User', userSchema);

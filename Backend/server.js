@@ -53,17 +53,19 @@ app.use('/api/v1/user', userRouter);
 app.use('/api/v1/job', jobRouter);
 
 
-
-
-
-
-
-
-
-
-
 //errormiddleware
 app.use((errorMiddleware));
+
+
+
+
+
+//connect to database
+
+
+
+
+
 
 //listen
 app.listen(port, () => {
